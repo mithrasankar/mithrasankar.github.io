@@ -14,15 +14,35 @@ console.log('email: ', emailText,'message: ', messageText);
 
 submitButton.addEventListener('click', clickListener);
 
-function myFunction(imgs) {
-    // expanded image
-    var expandImg = document.getElementById("expandedImg");
-    // image text
-    var imgText = document.getElementById("imgtext");
-    // Use the same src in the expanded image as the image being clicked on from the grid
-    expandImg.src = imgs.src;
-    // Use the value of the alt attribute of the clickable image as text inside the expanded image
-    imgText.innerHTML = imgs.alt;
-    // Show the container element (hidden with CSS)
-    expandImg.parentElement.style.display = "block";
+/*--------lightbox*/
+
+var slideIndex = 1;
+showSlide(slideIndex);
+
+function openLightbox() {
+  document.getElementById('Lightbox').style.display = 'block';
+}
+
+function closeLightbox() {
+  document.getElementById('Lightbox').style.display = 'none';
+}
+
+function toSlide(n) {
+	showSlide(slideIndex = n);
+}
+
+function showSlide(n) {
+
+  const slides = document.getElementsByClassName('slide');
+  let modalPreviews = document.getElementsByClassName('modal-preview');
+
+  for (let i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
   }
+  for (let i = 0; i < modalPreviews.length; i++) {
+      modalPreviews[i].className = modalPreviews[i].className.replace(' active', '');
+  }
+  
+  slides[slideIndex - 1].style.display = 'block';
+  modalPreviews[slideIndex - 1].className += ' active';
+}
