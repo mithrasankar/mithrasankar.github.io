@@ -1,1 +1,157 @@
+* {
+  font-family: 'Calluna', serif;
+  margin: 0px;
+  padding: 0px;
+  color: #881c1c;
+  text-decoration: none;
+  font-weight: 600;
+}
     
+    a { -webkit-transition: 0.5s linear all;
+        transition: 0.5s linear all;}
+
+    .nav {
+           
+            font-weight: bold;
+            float: right;
+      
+          }
+          
+    .nav a {
+            color: #EFAC7C;
+            font-size: 22px;
+            text-decoration: none;
+            line-height: 30px;
+            text-align: center;
+        
+          }
+
+      #header { 
+        background-color: #681515;
+        overflow: hidden;
+        font-weight: bold;
+        padding-top: 1px;
+        padding: 20px 10px;
+        display: flex;
+        
+        justify-content: space-between;
+      }
+
+      .intro { 
+        margin-top: 40px;
+        font-size: 26px;
+        font-weight: 600;
+        z-index: 0;
+        padding: 5%;
+        margin: 10%;
+      }
+          
+    .title {
+      font-weight: bold;
+      font-size: 30px;
+      margin-left: 14px;
+      color: #EFAC7C;
+    }
+    
+    li {
+            display: inline-block;
+           
+          }
+          
+    li a:hover {
+            background-color: #EFAC7C;
+            color: #881c1c;
+          }
+/*
+    ul {
+           
+            display: flex;
+            justify-content: space-around;
+          }
+  */
+          
+    head, body{
+            background-color: #EFAC7C;
+            color: #681515;
+          }
+          
+          .flexContainer {
+            display: flex;
+            text-align: justify;
+          }
+    
+          
+          .contact p { 
+            color: #681515;
+            font-weight: 600;
+            margin-left: 14px;
+          }
+
+          .contact a { 
+          color: #EFAC7C;
+          font-size: 24px;
+          float: left; 
+          text-decoration: none;
+          background-color: #681515;
+          margin-left: 14px;
+          
+  
+
+      }
+
+          
+          .footer {
+            color:  #681515;
+            font-size: 16px;
+            display: flex;
+            bottom:0;
+            position:fixed; 
+            margin-left: 14px;
+          }
+
+          .row {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0 4px;
+          }
+          
+          /* four equal columns  */
+          .column {
+            flex: 25%;
+            max-width: 25%;
+            padding: 4, 4px;
+          }
+          
+          .column img {
+            margin-top: 8px;
+            vertical-align: middle;
+            width: 100%;
+          }
+          
+          /* two column-layout instead of four columns */
+          @media screen and (max-width: 800px) {
+            .column {
+              flex: 50%;
+              max-width: 50%;
+            }
+          }
+          
+          /*  two columns stack */
+          @media screen and (max-width: 600px) {
+            .column {
+              flex: 100%;
+              max-width: 100%;
+            }
+          }
+
+.homeTitle{
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+.homeTitle h2{
+  font-size: 18px;
+  font-weight: 550;
+}
