@@ -1,20 +1,20 @@
 /*--------contact*/
 
-let submitButton = document. querySelector('#submit-button');
+let submitButton = document.querySelector("#submit-button");
 
-function clickListener (event) {
-event.preventDefault();
+function clickListener(event) {
+  event.preventDefault();
 
-let emailInput = document.querySelector ('#email') ;
-let messageInput = document.querySelector ('#message') ;
+  let emailInput = document.querySelector("#email");
+  let messageInput = document.querySelector("#message");
 
-let emailText = emailInput.value;
-let messageText = messageInput. value;
+  let emailText = emailInput.value;
+  let messageText = messageInput.value;
 
-console.log('email: ', emailText,'message: ', messageText);
+  console.log("email: ", emailText, "message: ", messageText);
 }
 
-submitButton.addEventListener('click', clickListener);
+submitButton.addEventListener("click", clickListener);
 
 /*--------lightbox*/
 
@@ -22,29 +22,31 @@ var slideIndex = 1;
 showSlide(slideIndex);
 
 function openLightbox() {
-  document.getElementById('Lightbox').style.display = 'block';
+  document.getElementById("Lightbox").style.display = "block";
 }
 
 function closeLightbox() {
-  document.getElementById('Lightbox').style.display = 'none';
+  document.getElementById("Lightbox").style.display = "none";
 }
 
 function toSlide(n) {
-	showSlide(slideIndex = n);
+  showSlide((slideIndex = n));
 }
 
 function showSlide(n) {
-
-  const slides = document.getElementsByClassName('slide');
-  let modalPreviews = document.getElementsByClassName('modal-preview');
+  const slides = document.getElementsByClassName("slide");
+  let modalPreviews = document.getElementsByClassName("modal-preview");
 
   for (let i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
+    slides[i].style.display = "none";
   }
   for (let i = 0; i < modalPreviews.length; i++) {
-      modalPreviews[i].className = modalPreviews[i].className.replace(' active', '');
+    modalPreviews[i].className = modalPreviews[i].className.replace(
+      " active",
+      ""
+    );
   }
-  
-  slides[slideIndex - 1].style.display = 'block';
-  modalPreviews[slideIndex - 1].className += ' active';
+
+  slides[slideIndex - 1].style.display = "block";
+  modalPreviews[slideIndex - 1].className += " active";
 }
