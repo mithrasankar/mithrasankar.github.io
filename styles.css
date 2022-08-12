@@ -14,6 +14,8 @@ a {
 .nav {
   font-weight: bold;
   float: right;
+  position: relative;
+  margin-top: 6px;
 }
 
 .nav a {
@@ -22,6 +24,7 @@ a {
   text-decoration: none;
   line-height: 30px;
   text-align: center;
+  margin-right: 10px;
 }
 
 #header {
@@ -31,7 +34,6 @@ a {
   padding-top: 1px;
   padding: 20px 10px;
   display: flex;
-
   justify-content: space-between;
 }
 
@@ -71,7 +73,6 @@ li a:hover {
   color: #881c1c;
 }
 
-head,
 body {
   background-color: #efac7c;
   color: #681515;
@@ -92,13 +93,40 @@ body {
   font-weight: 510;
 }
 
-.footer {
-  color: #681515;
+#footer {
+  background-color: #681515;
+  padding-top: 1px;
+  padding: 10px 10px;
+  overflow: hidden;
   font-size: 16px;
   display: flex;
   bottom: 0;
   position: fixed;
   margin-left: 14px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#footer h2,
+h3,
+h4 {
+  color: #efac7c;
+}
+
+#submit-button {
+  background-color: #681515;
+  font-family: "Calluna", serif;
+  margin: 0px;
+  padding: 0px;
+  color: #efac7c;
+  font-weight: bold;
+  font-size: 14px;
+  border: none;
+  outline: none;
+}
+
+td {
+  padding: 10px;
 }
 
 /* home.html  */
