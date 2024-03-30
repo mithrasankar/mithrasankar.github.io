@@ -1,0 +1,108 @@
+* {
+  font-family: "Calluna", serif;
+  margin: 0px;
+  padding: 0px;
+  color: #881c1c;
+  text-decoration: none;
+}
+
+body {
+  background-color: #efac7c;
+  color: #881c1c;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+a:hover {
+  background-color: #881c1c;
+  color: #efac7c;
+}
+
+section {
+  margin-bottom: 30px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project {
+  margin-bottom: 20px;
+}
+
+.skills ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.skills li {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  padding: 5px 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.experience ul {
+  padding-left: 20px;
+}
+
+.experience li {
+  margin-bottom: 10px;
+}
+
+.extracurriculars ul {
+  padding-left: 20px;
+}
+
+.extracurriculars li {
+  margin-bottom: 10px;
+}
+
+.footer {
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer p {
+  margin: 0;
+}
+
+/* Stagger the containers */
+section:nth-child(odd) {
+  margin-right: 20px;
+}
