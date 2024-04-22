@@ -82,6 +82,9 @@ section {
   font-weight: bold;
 }
 
+.extracurriculars p {
+  font-weight: bold;
+}
 .extracurriculars ul {
   padding-left: 20px;
 }
