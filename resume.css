@@ -78,6 +78,9 @@ section {
 .experience li {
   margin-bottom: 10px;
 }
+.experience p {
+  font-weight: bold;
+}
 
 .extracurriculars ul {
   padding-left: 20px;
